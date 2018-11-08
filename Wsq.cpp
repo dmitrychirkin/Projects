@@ -1,4 +1,4 @@
-// This is the main DLL file.
+// This is the main file for compressing and decompressing image.
 #include "stdafx.h"
 #include "wsq.h"
 
@@ -15,14 +15,14 @@
 int Wsq::wsq_decode_mem(unsigned char *odata, int *ow, int *oh, int *od, int *oppi,
                    int chksum, unsigned char *idata, const int ilen)
 {
-   int ret, i; 
-   unsigned short marker;         /* WSQ marker */
-   int num_pix;             /* image size and counter */
-   int width, height; //, ppi;        /* image parameters */
-   float *fdata; //, *fdata1, *fdata_bse;   /* image pointers */
-   short *qdata;                  /* image pointers */
-   unsigned char *cbufptr;        /* points to current byte in buffer */
-   unsigned char *ebufptr;        /* points to end of buffer */
+   int ret = 0, i = 0; 
+   unsigned short marker = 0;         /* WSQ marker */
+   int num_pix = 0;             /* image size and counter */
+   int width = 0, height = 0; //, ppi;        /* image parameters */
+   float *fdata = 0; //, *fdata1, *fdata_bse;   /* image pointers */
+   short *qdata = 0;                  /* image pointers */
+   unsigned char *cbufptr = 0;        /* points to current byte in buffer */
+   unsigned char *ebufptr = 0;        /* points to end of buffer */
 
    /* Set memory buffer pointers. */
    if (!idata) return -1;
