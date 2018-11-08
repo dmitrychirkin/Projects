@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>Util.h</itemPath>
+      <itemPath>dataio.h</itemPath>
+      <itemPath>defs.H</itemPath>
+      <itemPath>jpegl.h</itemPath>
+      <itemPath>stdafx.h</itemPath>
+      <itemPath>swap.H</itemPath>
+      <itemPath>swsq31.h</itemPath>
+      <itemPath>wsq.h</itemPath>
+      <itemPath>wsq_fbi.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>Wsq.cpp</itemPath>
+      <itemPath>swsq.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="3">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <commandLine>-fexceptions</commandLine>
+          <preprocessorList>
+            <Elem>__i386__</Elem>
+          </preprocessorList>
+        </ccTool>
+        <archiverTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libwsq31_x64.a</output>
+        </archiverTool>
+      </compileType>
+      <item path="Util.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Wsq.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="dataio.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="defs.H" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="jpegl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="stdafx.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="swap.H" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="swsq.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="swsq31.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wsq.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wsq_fbi.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="3">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <commandLine>-fexceptions</commandLine>
+          <preprocessorList>
+            <Elem>__i386__</Elem>
+          </preprocessorList>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <archiverTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libwsq31_x64.a</output>
+        </archiverTool>
+      </compileType>
+      <item path="Util.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Wsq.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="dataio.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="defs.H" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="jpegl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="stdafx.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="swap.H" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="swsq.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="swsq31.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wsq.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wsq_fbi.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release_ARM" type="3">
+      <toolsSet>
+        <compilerSet>Linaro-ARM-7.3.1|GNU</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <commandLine>-fexceptions</commandLine>
+          <preprocessorList>
+            <Elem>__i386__</Elem>
+          </preprocessorList>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <archiverTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libwsq31.a</output>
+        </archiverTool>
+      </compileType>
+      <item path="Util.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Wsq.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="dataio.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="defs.H" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="jpegl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="stdafx.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="swap.H" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="swsq.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="swsq31.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wsq.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wsq_fbi.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
